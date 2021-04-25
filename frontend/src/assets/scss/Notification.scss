@@ -1,0 +1,58 @@
+@import './common.scss';
+
+.notification-container {
+    min-height: 590px;
+    height: auto !important;
+
+    .notification-header {
+        color: $common-font-color;
+        @extend .flex-column;
+    }
+
+    .notification-button-container {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0 0;
+
+        div {
+            @extend .flex-column;
+            margin: 10px 0 20px;
+        }
+
+        span {
+            margin-right: 15px;
+        }
+    }
+
+    .notification-redirect-button {
+        @extend .flex-column;
+        margin: 10px 0 20px;
+    }
+}
+
+.notify-container {
+    @extend .flex-column;
+    margin: 20px;
+
+    label {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+}
+
+.dropdown-box {
+    @extend .flex-row;
+    width: 100%;
+
+    :first-child {
+        margin-right: 10px;
+    }
+    
+    .dropdown-time {
+        width: 28% !important;
+        min-width: 7em  !important;
+        z-index: 0;
+    }
+}
+
+

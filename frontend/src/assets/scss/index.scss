@@ -1,0 +1,101 @@
+@import './common.scss';
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #D6DBDF;
+    box-sizing: border-box;
+    color: #dcdcdc;
+    margin: 0;
+    padding: 0;
+  }
+  
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.content-title {
+  color: #dcdcdc;
+}
+  
+.app-container {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.Ash {
+  @extend .app-container;
+  background-image: url('/src/assets/imgs/ash.jpg');
+}
+
+.Clouds {
+  @extend .app-container;
+  background-image: url('/src/assets/imgs/clouds.jpg');
+}
+
+.Mist {
+  @extend .app-container;
+  background-image: url('/src/assets/imgs/mist.jpg');
+}
+
+.Rain {
+  @extend .app-container;
+  background-image: url('/src/assets/imgs/rain.jpg');
+}
+
+.Snow {
+  @extend .app-container;
+  background-image: url('/src/assets/imgs/snow.jpg');
+}
+
+.Squall {
+  @extend .app-container;
+  background-image: url('/src/assets/imgs/squall.jpg');
+}
+
+.Clear {
+  @extend .app-container;
+  background-position: 50% 80%;
+  background-image: url('/src/assets/imgs/sunny.jpg');
+}
+
+.Thunder {
+  @extend .app-container;
+  background-image: url('/src/assets/imgs/thunder.jpg');
+}
+
+.Tornade {
+  @extend .app-container;
+  background-image: url('/src/assets/imgs/tornado.jpg');
+}
+
+.Sand {
+  @extend .app-container;
+  background-image: url('/src/assets/imgs/sand.jpg');
+}
+
+.color-filter {
+  @extend .flex-column;
+  height: 110vh;
+  background: rgba(113, 121, 129, 0.39);
+  overflow: hidden;
+  z-index: 2;
+
+  @media screen and (max-width: $break-500) {
+    height: 150vh;
+  }
+}
+
+@import './Auth.scss';
+@import './Buttons.scss';
+@import './Modal.scss';
+@import './Weather.scss';
+@import './Reset.scss';
+@import './Notification.scss';

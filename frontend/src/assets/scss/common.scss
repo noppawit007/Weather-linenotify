@@ -1,0 +1,65 @@
+// color
+$common-font-color: #D5D8DC;
+$input-border: 2px solid #ddd;
+$background-color-white: #fff;
+$transparent: #00000000;
+
+// breakpoint
+$break-500: 500px;
+$break-600: 600px;
+$break-699: 699px;
+$break-700: 700px;
+$break-1100: 1100px;
+$break-1350px: 1350px;
+$break-1500px: 1500px;
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    @extend .flex;
+    flex-direction: column;
+  }
+
+.flex-row {
+    @extend .flex;
+    flex-direction: row;
+  }
+  
+.success {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: rgb(252, 251, 250);
+    font-size: 1.2rem;
+    background-color: rgba(96, 255, 239, 0.38);
+    padding: 10px 20px;
+    border-radius: 4px;
+  }
+  
+.error {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: #EC7063;
+    font-size: 1.2rem;
+  
+    @media screen and (max-width: $break-699) {
+      font-size: 1.1rem;
+    }
+  
+    @media screen and (max-width: $break-500) {
+      font-size: 1rem;
+    }
+  }
+
+
+.loading-box {
+  position: absolute;
+  top: 40%;
+  left: 46%;
+  z-index: 99;
+}

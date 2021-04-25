@@ -1,0 +1,47 @@
+@import './common.scss';
+
+.reset-container {
+    color: #dcdcdc;
+    @extend .flex-column;
+    height: 450px !important;
+
+    .reset-header {
+        margin: 20px 0;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .reset-form {
+        @extend .flex-column;
+        width: 40%;
+    
+        .email-input {
+            margin: 10px 0 30px;
+            width: 100%;
+            text-align: center;
+            height: 22px;
+            border-radius: 3px;
+            border: $input-border;
+            box-sizing: border-box;
+            padding: 13px 15px;
+            color: $common-font-color;
+
+            &:focus {
+                border: 1px solid #26a69a;
+                -webkit-box-shadow: 0 1px 0 0 #26a69a;
+                box-shadow: 0 1px 0 0 #26a69a;
+            }
+        }
+    }
+
+    .reset-response {
+        margin-top: 20px;
+    }
+}

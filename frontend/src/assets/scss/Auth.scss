@@ -1,0 +1,122 @@
+@import './common.scss';
+
+.auth-container {
+    height: 480px !important;
+    position: relative;
+
+    @media screen and (min-width: $break-700) {
+        height: 470px !important;
+    }
+    
+    @media screen and (min-width: $break-1100) {
+        width: 60%;
+    }
+
+    @media screen and (min-width: $break-1350px) {
+        width: 50%;
+    }
+
+    @media screen and (min-width: $break-1500px) {
+        width: 40%;
+    }
+
+}
+
+.auth-section {
+    color: $common-font-color;
+    @extend .flex-column;
+
+    h3 {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .auth-form {
+        margin-top: 15px;
+        width: 100%;
+        @extend .flex-column;
+    }
+
+    .register-content {
+        margin-bottom: 30px;
+    }
+
+    .auth-submit {
+        text-align: center;
+        margin: 30px;
+    }
+
+}
+
+.input-form {
+    @extend .flex-row;
+    margin-top: 15px;
+    width: 100%;
+    .input-label {
+        width: 20%;
+        font-size: 13px;
+        color: $common-font-color;
+    }
+
+    .input-email {
+        color: $common-font-color !important;
+        border-radius: 3px;
+        border: $input-border;
+        height: 22px;
+        padding: 0 4px;
+        width: 40% !important;
+        height: 30px;
+        // box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0), inset 0 0 0 100px #fcf2f400 !important;
+    }
+
+    .password-box {
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        width: 40%;
+        height: 30px;
+    }
+
+
+    .input-password {
+        border: none;
+        padding: 0 4px;
+        height: 28px;
+        width: 85%;
+        color: $common-font-color !important;
+    }
+
+    .password-visible {
+        width: 15%;
+        background-color: $transparent;
+        border: none;
+        color: $common-font-color;
+    }
+    
+    @media screen and (max-width: $break-600) {
+        input {
+            font-size: 10px !important;
+        }
+
+        .input-email {
+            width: 60%;
+        }
+
+        .password-box {
+            width: 40%;
+        }
+
+        .input-label {
+            font-size: 10px;
+            margin-right: 10px;
+        }
+
+        .password-visible {
+            font-size: 15px;
+        }
+
+    }
+}

@@ -1,0 +1,19 @@
+
+.modal-content {
+    text-align: center;
+
+    .modal-title {
+        color: #636161;
+        margin: 50px 0;
+    }
+
+    button {
+        margin: 0 10px;
+    }
+
+    @media screen and (max-width: $break-699) {
+        .modal-title, button {
+            font-size: 0.9rem;
+        }
+    }
+}
